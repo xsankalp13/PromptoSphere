@@ -56,17 +56,17 @@ Promptosphere uses Google Sign-In for authentication. To obtain the necessary cr
 
 #### 1\. Rename `.env.example` file to `.env` file in the project root directory and add the following environment variables:
 
-`GOOGLE_ID=YOUR_GOOGLE_CLIENT_ID
+`GOOGLE_ID=YOUR_GOOGLE_CLIENT_ID`
 
-GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET
+`GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET`
 
-MONGODB_URI=YOUR_MONGODB_URI
+`MONGODB_URI=YOUR_MONGODB_URI`
 
-NEXTAUTH_URL=http://localhost:3000
+`NEXTAUTH_URL=http://localhost:3000`
 
-NEXTAUTH_URL_INTERNAL=http://localhost:3000
+`NEXTAUTH_URL_INTERNAL=http://localhost:3000`
 
-NEXTAUTH_SECRET=YOUR_NEXTAUTH_SECRET`
+`NEXTAUTH_SECRET=YOUR_NEXTAUTH_SECRET`
 
 #### 2\. To create NEXTAUTH_SECRET run this command here: [openssl tool](https://www.cryptool.org/en/cto/openssl)
 
