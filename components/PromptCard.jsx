@@ -51,7 +51,12 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
           </div>
         </div>
 
-        <div className='copy_btn' onClick={handleCopy}>
+        <button
+          className='copy_btn'
+          onClick={handleCopy}
+          type='button'
+          aria-label='Copy prompt'
+        >
           <Image
             src={
               copied === post.prompt
@@ -62,7 +67,7 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
             width={12}
             height={12}
           />
-        </div>
+        </button>
       </div>
 
       <p className='my-4 font-satoshi text-sm text-gray-700'>{post.prompt}</p>
@@ -75,18 +80,20 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
 
       {session?.user.id === post.creator._id && pathName === "/profile" && (
         <div className='mt-5 flex-center gap-4 border-t border-gray-100 pt-3'>
-          <p
+          <button
             className='font-inter text-sm green_gradient cursor-pointer'
             onClick={handleEdit}
+            type='button'
           >
             Edit
-          </p>
-          <p
+          </button>
+          <button
             className='font-inter text-sm orange_gradient cursor-pointer'
             onClick={handleDelete}
+            type='button'
           >
             Delete
-          </p>
+          </button>
         </div>
       )}
     </div>
